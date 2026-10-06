@@ -1,6 +1,6 @@
 # REVIEW de la ressource `reservations` générée par Copilot
 
-| Point de contrôle | OK / KO | Ce que j'ai corrigé |
+| Point de contrôle | OK / KO | Remarques et ce que j'ai corrigé |
 |---|---|---|
 | Les codes de statut correspondent à la spec (201, 404, 409) | OK | Testé dans `/docs` : `POST /reservations` renvoie 201 avec `statut: "active"`, `GET /reservations/999` renvoie 404, `POST /reservations/1/annuler` renvoie 200 puis 409 à la 2e tentative. Rien à corriger. |
 | `response_model` présent sur les 4 routes | OK | Testé dans `/docs` : une liste apparaît dans « Responses » des 4 routes, cela a aussi été confirmé dans le code. Rien à corriger. |
